@@ -47,7 +47,8 @@
     
    
     $payer = new MercadoPago\Payer();
-      $payer->name = "Lalo Landa";
+      $payer->name = "Lalo";
+    $payer->surname = "Landa";
       $payer->email = "test_user_83958037@testuser.com";
       $payer->phone = array(
         "area_code" => "52",
@@ -55,7 +56,7 @@
       );
       
       $payer->address = array(
-        "street_name" => "Insurgente Sur",
+        "street_name" => "Insurgentes Sur",
         "street_number" => 1602,
         "zip_code" => "03940"
       );
