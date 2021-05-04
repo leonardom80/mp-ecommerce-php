@@ -29,7 +29,7 @@
     $item->description = "Dispositivo móvil de Tienda e-commerce";
     
     $img = str_replace('./assets/','',$_POST['image']);
-    $item->picture_url = "https://ingenieromolina.com/tienda/assets/".$img;
+    $item->picture_url = "https://leonardom80-mp-commerce-php.herokuapp.com/assets/".$img;
     
     $item->quantity = $_POST['unit'];
     $item->unit_price = $_POST['price'];
@@ -39,9 +39,9 @@
     // backs urls
     
     $preference->back_urls = array(
-        "success" => "https://ingenieromolina.com/tienda/estado.php?estado=success",
-        "failure" => "https://ingenieromolina.com/tienda/estado.php?estado=failure",
-        "pending" => "https://ingenieromolina.com/tienda/estado.php?estado=pending"
+        "success" => "https://leonardom80-mp-commerce-php.herokuapp.com/estado.php?estado=success",
+        "failure" => "https://leonardom80-mp-commerce-php.herokuapp.com/estado.php?estado=failure",
+        "pending" => "https://leonardom80-mp-commerce-php.herokuapp.com/estado.php?estado=pending"
     );
     $preference->auto_return = "approved";
     
@@ -66,7 +66,7 @@
     $preference->items = array($item);
     $preference->payer = $payer;
     // Url de notificacion webhook
-    $preference->notification_url = "https://ingenieromolina.com/tienda/webhook.php";
+    $preference->notification_url = "https://leonardom80-mp-commerce-php.herokuapp.com/webhook.php";
     $preference->save();
       
 ?>
