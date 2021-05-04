@@ -82,7 +82,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="format-detection" content="telephone=no">
 
-        
+        <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 
         <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
         <link rel="stylesheet" href="./assets/category.css" media="screen, print">
